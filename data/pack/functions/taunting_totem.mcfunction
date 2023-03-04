@@ -8,5 +8,3 @@ execute as @a run scoreboard players set @s Taunt 0
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:totem_of_undying",tag:{display:{Name:'{"text":"Taunting Totem"}'}}}}] run scoreboard players set @s Taunt 1
 
-
-#fat juicy potatoes 
