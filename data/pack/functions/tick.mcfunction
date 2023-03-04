@@ -16,7 +16,13 @@ execute as @a at @s if score @s iz.wand matches 1.. run execute if score @s iz.c
 #snowball shenanigans
 execute at @e[type=minecraft:snowball] run summon minecraft:lightning_bolt ~ ~ ~
 
+#totem shit
+function pack:taunting_totem
 
+
+execute as @a[scores={Taunt=1..}] at @s run execute as @e[type=!player,distance=..10] run data modify entity @s AttackTarget set from entity @a[scores={Taunt=1..},limit=1,sort=nearest] UUID
+
+execute as @e[type=!player,distance=..10] run data get entity @s Target
 
 
 
